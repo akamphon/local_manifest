@@ -1,0 +1,41 @@
+cd hardware/interfaces
+git fetch https://github.com/teamnexus/android_hardware_interfaces
+git cherry-pick 4fa05e6ab7a1219dd33432abe653ad027fd93413
+cd ../..
+# cd hardware/libhardware
+# git fetch https://github.com/lineageos/android_hardware_libhardware
+# git cherry-pick 7e42f0a73bc9249ce8c737499463c768dc9ed709
+# cd ../..
+cd frameworks/native
+git fetch https://github.com/teamnexus/android_frameworks_native
+git cherry-pick eb315db646ffca7bd5e02eb82b680d2cb3a4981f
+cd ../..
+cd hardware/samsung
+# git cherry-pick cc29f1bfddbd61d87b1b0519347127df7f23477c
+git fetch https://github.com/LineageOS/android_hardware_samsung refs/changes/60/231960/4 && git cherry-pick FETCH_HEAD
+cd ../..
+# cd system/core
+# git fetch https://github.com/lineageos/android_system_core
+# git cherry-pick e0c0b8711bbfb72ad0827a08db9dc7183a418cd8
+# git cherry-pick a8e3c9a3c8c795b1ee7bd7387ab194aee0e1d120
+# cd ../..
+# cd hardware/ril
+# git fetch https://github.com/aquarios/hardware_ril a9-caf
+# git cherry-pick 02fda1ab3916a8dfe6642b089b6b82c64fbceb38
+# cd ../..
+cd build/core
+git fetch https://github.com/aquarios/build a9-caf
+# git cherry-pick 6a19c81ebc5682f8de2e6a006fc0b98eae06e794
+# git cherry-pick bc3616fbd4a77b0255597fbd0728fd2ad3081e01
+# git cherry-pick 85fc7db9c90fea30e17a64f0f9813708a1e013d8
+# git cherry-pick 9f7f1ac1f280914b51b19a080cbfef56a42eb0f1
+# git cherry-pick 10f4deeb339271d01232616e7499a68aea90af7a
+# git cherry-pick cc99815a322477590f931fa774594851b9bd7a42
+# git revert 75c28316f57096f9fcaf6e00892dca07e0674362
+git cherry-pick b07d17d5c75cdcff117bf77a055e481092bd4199
+git cherry-pick d4b2be90ea2edc870ead7e304ab45013a18c88b1
+cd ../..
+# cd build/soong
+# git fetch https://github.com/aquarios/build_soong a9-caf
+# git cherry-pick edcd59cc7ff995746520bb920171e1975dade939
+# cd ../..
